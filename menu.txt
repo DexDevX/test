@@ -1,44 +1,502 @@
--- Farewell Infortality.
--- Version: 2.82
 -- Instances:
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local ImageLabel = Instance.new("ImageLabel")
+local Script = Instance.new("ScreenGui")
+local OpenBtn = Instance.new("TextButton")
+local Start = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local Menu = Instance.new("Frame")
+local CloseBtn = Instance.new("TextButton")
+local ForceResetBtn = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
+local UnbanBtn = Instance.new("TextButton")
+local ClawBtn = Instance.new("TextButton")
+local UzShotGlock = Instance.new("TextButton")
+local DuplicationBtn = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Credit = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
 --Properties:
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Script.Name = "Script"
+Script.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Script.ResetOnSpawn = false
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.new(0, 0, 0)
-Frame.Size = UDim2.new(0, 1536, 0, 769)
+OpenBtn.Name = "OpenBtn"
+OpenBtn.Parent = Script
+OpenBtn.BackgroundColor3 = Color3.new(0.956863, 0.968628, 1)
+OpenBtn.BorderColor3 = Color3.new(0.141176, 0.184314, 0.992157)
+OpenBtn.BorderSizePixel = 0
+OpenBtn.Position = UDim2.new(0, 0, 0.491836727, 0)
+OpenBtn.Size = UDim2.new(0, 83, 0, 37)
+OpenBtn.Font = Enum.Font.SciFi
+OpenBtn.Text = "OPEN"
+OpenBtn.TextColor3 = Color3.new(0, 0, 0)
+OpenBtn.TextScaled = true
+OpenBtn.TextSize = 14
+OpenBtn.TextWrapped = true
 
-ImageLabel.Parent = Frame
-ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.417450577, 0, 0.116256975, 0)
-ImageLabel.Size = UDim2.new(0, 139, 0, 117)
-ImageLabel.Image = "rbxgameasset://Images/VIPZ"
+Start.Name = "Start"
+Start.Parent = Script
+Start.BackgroundColor3 = Color3.new(1, 1, 1)
+Start.BorderColor3 = Color3.new(0.25098, 0.0431373, 0.670588)
+Start.Position = UDim2.new(0, 647, 0, 156)
+Start.Size = UDim2.new(0, 191, 0, 178)
+Start.Visible = false
 
-TextLabel.Parent = Frame
+TextButton.Parent = Start
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BorderColor3 = Color3.new(0.0588235, 0.0666667, 0.713726)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.204188481, 0, 0.230337098, 0)
+TextButton.Size = UDim2.new(0, 113, 0, 44)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "Jiggin' Menu"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Start
+TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_2.BorderColor3 = Color3.new(0.0588235, 0.0666667, 0.713726)
+TextButton_2.BorderSizePixel = 3
+TextButton_2.Position = UDim2.new(0.203999996, 0, 0.544606745, 0)
+TextButton_2.Size = UDim2.new(0, 113, 0, 44)
+TextButton_2.Font = Enum.Font.ArialBold
+TextButton_2.Text = "Credits"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = Start
+TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_3.Size = UDim2.new(0, 23, 0, 18)
+TextButton_3.Font = Enum.Font.Arial
+TextButton_3.Text = "X"
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextSize = 14
+
+TextLabel.Parent = Start
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
-TextLabel.Position = UDim2.new(0.288945258, 0, 0.350432396, 0)
-TextLabel.Size = UDim2.new(0, 532, 0, 76)
-TextLabel.Font = Enum.Font.ArialBold
-TextLabel.Text = "BLACKLISTED"
-TextLabel.TextColor3 = Color3.new(0.886275, 0, 0.0117647)
-TextLabel.TextSize = 80
+TextLabel.Position = UDim2.new(0.157068059, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Our discord:PYHYscy"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
 
-TextLabel_2.Parent = Frame
+Menu.Name = "Menu"
+Menu.Parent = Script
+Menu.BackgroundColor3 = Color3.new(0.368627, 0.34902, 1)
+Menu.BorderColor3 = Color3.new(0.25098, 0.0431373, 0.670588)
+Menu.Position = UDim2.new(0, 1064, 0, 21)
+Menu.Size = UDim2.new(0, 191, 0, 399)
+Menu.Visible = false
+
+CloseBtn.Name = "CloseBtn"
+CloseBtn.Parent = Menu
+CloseBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+CloseBtn.Size = UDim2.new(0, 22, 0, 19)
+CloseBtn.Font = Enum.Font.SourceSans
+CloseBtn.Text = "X"
+CloseBtn.TextColor3 = Color3.new(0, 0, 0)
+CloseBtn.TextSize = 14
+
+ForceResetBtn.Name = "ForceResetBtn"
+ForceResetBtn.Parent = Menu
+ForceResetBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+ForceResetBtn.Position = UDim2.new(0.113989636, 0, 0.247491658, 0)
+ForceResetBtn.Size = UDim2.new(0, 148, 0, 31)
+ForceResetBtn.Font = Enum.Font.SourceSans
+ForceResetBtn.Text = "Force Reset"
+ForceResetBtn.TextColor3 = Color3.new(0, 0, 0)
+ForceResetBtn.TextSize = 14
+
+TextLabel_2.Parent = Menu
 TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel_2.BackgroundTransparency = 1
-TextLabel_2.Position = UDim2.new(0.320257246, 0, 0.512438476, 0)
-TextLabel_2.Size = UDim2.new(0, 436, 0, 210)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.134605378, 0, 0.0501042828, 0)
+TextLabel_2.Size = UDim2.new(0, 139, 0, 37)
 TextLabel_2.Font = Enum.Font.SciFi
-TextLabel_2.Text = "If you feel you the blacklist was a mistake then contact us via discord server: PYHYscy"
-TextLabel_2.TextColor3 = Color3.new(0.560784, 0, 0.00784314)
+TextLabel_2.Text = "Jiggin' Menu V1"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14
 TextLabel_2.TextWrapped = true
+
+UnbanBtn.Name = "UnbanBtn"
+UnbanBtn.Parent = Menu
+UnbanBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+UnbanBtn.Position = UDim2.new(0.114, 0, 0.344999999, 0)
+UnbanBtn.Size = UDim2.new(0, 148, 0, 31)
+UnbanBtn.Font = Enum.Font.SourceSans
+UnbanBtn.Text = "Unban"
+UnbanBtn.TextColor3 = Color3.new(0, 0, 0)
+UnbanBtn.TextSize = 14
+
+ClawBtn.Name = "ClawBtn"
+ClawBtn.Parent = Menu
+ClawBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+ClawBtn.Position = UDim2.new(0.114, 0, 0.648001134, 0)
+ClawBtn.Size = UDim2.new(0, 148, 0, 31)
+ClawBtn.Font = Enum.Font.SourceSans
+ClawBtn.Text = "Single claw"
+ClawBtn.TextColor3 = Color3.new(0, 0, 0)
+ClawBtn.TextSize = 14
+
+UzShotGlock.Name = "UzShotGlock"
+UzShotGlock.Parent = Menu
+UzShotGlock.BackgroundColor3 = Color3.new(1, 1, 1)
+UzShotGlock.Position = UDim2.new(0.114, 0, 0.544625938, 0)
+UzShotGlock.Size = UDim2.new(0, 148, 0, 31)
+UzShotGlock.Font = Enum.Font.SourceSans
+UzShotGlock.Text = "UzShotGlock"
+UzShotGlock.TextColor3 = Color3.new(0, 0, 0)
+UzShotGlock.TextSize = 14
+
+DuplicationBtn.Name = "DuplicationBtn"
+DuplicationBtn.Parent = Menu
+DuplicationBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+DuplicationBtn.Position = UDim2.new(0.114, 0, 0.439823538, 0)
+DuplicationBtn.Size = UDim2.new(0, 148, 0, 31)
+DuplicationBtn.Font = Enum.Font.SourceSans
+DuplicationBtn.Text = "Duplicate"
+DuplicationBtn.TextColor3 = Color3.new(0, 0, 0)
+DuplicationBtn.TextSize = 14
+
+Frame.Parent = Menu
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0, 0, 0.219806731, 0)
+Frame.Size = UDim2.new(0, 191, 0, 5)
+
+Credit.Name = "Credit"
+Credit.Parent = Script
+Credit.BackgroundColor3 = Color3.new(0.368627, 0.34902, 1)
+Credit.Position = UDim2.new(0.370442808, 0, 0.253061235, 0)
+Credit.Size = UDim2.new(0, 253, 0, 242)
+Credit.Visible = false
+
+TextLabel_3.Parent = Credit
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.110671937, 0, 0.136363626, 0)
+TextLabel_3.Size = UDim2.new(0, 197, 0, 175)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "Made by:\nVIPZ#0420    \nThanks goes to:\nDrPoppadopolist#6518\n"
+TextLabel_3.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 15
+TextLabel_3.TextWrapped = true
+
+TextButton_4.Parent = Credit
+TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_4.BorderColor3 = Color3.new(0.0588235, 0.0666667, 0.713726)
+TextButton_4.BorderSizePixel = 2
+TextButton_4.Position = UDim2.new(0.312252969, 0, 0.706611574, 0)
+TextButton_4.Size = UDim2.new(0, 94, 0, 44)
+TextButton_4.Font = Enum.Font.ArialBold
+TextButton_4.Text = "BACK"
+TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14
+TextButton_4.TextWrapped = true
 -- Scripts:
+function SCRIPT_KAAI86_FAKESCRIPT() -- OpenBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = OpenBtn
+	script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.Script.Start.Visible = true
+	game.Players.LocalPlayer.PlayerGui.Script.OpenBtn.Visible = false
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_KAAI86_FAKESCRIPT))
+function SCRIPT_AFNJ65_FAKESCRIPT() -- Script.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Script
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "Jiggin'";
+		Text = "Jiggin' Menu by VIPZ#0420 has loaded successfully";
+		icon = "";
+		Duration = 10;
+	 })
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_AFNJ65_FAKESCRIPT))
+function SCRIPT_NUWT69_FAKESCRIPT() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton
+	script.parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Script.Start.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Script.Menu.Visible = true
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NUWT69_FAKESCRIPT))
+function SCRIPT_ZEBG82_FAKESCRIPT() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton_2
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Script.Start.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Script.Credit.Visible = true
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZEBG82_FAKESCRIPT))
+function SCRIPT_PUCH90_FAKESCRIPT() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton_3
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Script.Start.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Script.OpenBtn.Visible = true
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_PUCH90_FAKESCRIPT))
+function SCRIPT_THDQ80_FAKESCRIPT() -- Start.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Start
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_THDQ80_FAKESCRIPT))
+function SCRIPT_FERA68_FAKESCRIPT() -- CloseBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = CloseBtn
+	script.Parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerGui.Script.Menu.Visible = false
+	game.Players.LocalPlayer.PlayerGui.Script.OpenBtn.Visible = true
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FERA68_FAKESCRIPT))
+function SCRIPT_MOGE74_FAKESCRIPT() -- ForceResetBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = ForceResetBtn
+	script.Parent.MouseButton1Click:Connect(function()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+	if noclip then
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+	
+	if key == "r" then
+	noclip = not noclip
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	end
+	end)
+	end)
+	
+	
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_MOGE74_FAKESCRIPT))
+function SCRIPT_FOND76_FAKESCRIPT() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextLabel_2
+	while true do
+	 
+	 script.Parent.Text = "Jiggin' Menu V1"
+	 wait(3)
+	 script.Parent.Text = "Made by VIPZ#0420"
+	 wait(4)
+	 script.Parent.Text = "Join our discord:PYHYscy"
+	 wait(2)
+	end
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FOND76_FAKESCRIPT))
+function SCRIPT_EVKL79_FAKESCRIPT() -- UnbanBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = UnbanBtn
+	script.Parent.MouseButton1Click:Connect(function()
+	for i = 2, 100 do
+	    game:GetService("TeleportService"):Teleport(455366377, LocalPlayer)
+	end
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EVKL79_FAKESCRIPT))
+function SCRIPT_OMPH84_FAKESCRIPT() -- ClawBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = ClawBtn
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	game.Players.LocalPlayer.Backpack.Knife.Parent = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Character.Knife:Activate()
+	game.Players.LocalPlayer.Character.Knife.Parent = game.Players.LocalPlayer.Backpack
+	
+	game.Players.LocalPlayer.Backpack.Knife.GripPos = Vector3.new(1, -0, -0.1)
+	game.Players.LocalPlayer.Backpack.Knife.Parent  = game.Players.LocalPlayer.Character
+	
+	game.Players.LocalPlayer.Backpack.Knife.GripPos = Vector3.new(1, -0, 0.30)
+	game.Players.LocalPlayer.Backpack.Knife.Parent  = game.Players.LocalPlayer.Character
+	
+	game.Players.LocalPlayer.Backpack.Knife.GripPos = Vector3.new(1, -0, -0.5)
+	game.Players.LocalPlayer.Backpack.Knife.Parent  = game.Players.LocalPlayer.Character
+	
+	end)
+	
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_OMPH84_FAKESCRIPT))
+function SCRIPT_EZMW69_FAKESCRIPT() -- UzShotGlock.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = UzShotGlock
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	game.Players.LocalPlayer.Backpack.Shotty.Parent = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Character.Shotty:Activate()
+	game.Players.LocalPlayer.Character.Shotty.Parent = game.Players.LocalPlayer.Backpack
+	
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(-0.0, -0.1, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(-0.2, -0.0, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(-0.4, 0.1, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(-0.4, 0.3, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.4, 0.3, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.4, 0.1, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.2, -0.0, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.2, 0.5, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(-0.2, 0.5, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.0, 0.6, -0.7)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Shotty.GripPos = Vector3.new(0.0, 0.2, 0.1)
+	game.Players.LocalPlayer.Backpack.Shotty.Parent  = game.Players.LocalPlayer.Character
+	
+	game.Players.LocalPlayer.Backpack.Glock.Parent = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Character.Glock:Activate()
+	game.Players.LocalPlayer.Character.Glock.Parent = game.Players.LocalPlayer.Backpack
+	
+	game.Players.LocalPlayer.Backpack.Glock.GripPos = Vector3.new(-0.5, -0.6, -0.0)
+	game.Players.LocalPlayer.Backpack.Glock.Parent  = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Glock.GripPos = Vector3.new(1.4, -0.6, -0.0)
+	game.Players.LocalPlayer.Backpack.Glock.Parent  = game.Players.LocalPlayer.Character
+	
+	game.Players.LocalPlayer.Backpack.Uzi.Parent = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Character.Uzi:Activate()
+	game.Players.LocalPlayer.Character.Uzi.Parent = game.Players.LocalPlayer.Backpack
+	
+	game.Players.LocalPlayer.Backpack.Uzi.Parent = Vector3.new(1.5,-0.6,0.0)
+	game.Players.LocalPlayer.Backpack.Uzi.Parent = game.Players.LocalPlayer.Character
+	game.Players.LocalPlayer.Backpack.Uzi.Parent = Vector3.new(1.6,-0.6,0.0)
+	game.Players.LocalPlayer.Backpack.Uzi.Parent = game.Players.LocalPlayer.Character
+	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EZMW69_FAKESCRIPT))
+function SCRIPT_HVZM90_FAKESCRIPT() -- DuplicationBtn.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = DuplicationBtn
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+	local P = game:GetService("Players")
+	local LP = P.LocalPlayer
+	
+	local tools = {"Knife","Shotty","BoomBox","Uzi","Lockpick"}
+	local lawl = {}
+	
+	function unequip()
+	    for _,z in next,LP.Character:GetChildren() do 
+	        if z:IsA("Tool") then
+	            z.Parent = LP.Backpack
+	        end
+	    end
+	end
+	LP.Chatted:Connect(function(r)
+	    if r:sub(1,4) == "save" then
+	        unequip()
+	        for _,a in next,LP.Backpack:GetChildren() do
+	            for _,b in next,tools do
+	                if a.Name == b and a:IsA("Tool") then
+	                    table.insert(lawl,a)
+	                    a.Parent = LP
+	                end
+	            end
+	        end
+	    elseif r:sub(1,5) == "load" then
+	        for _,e in next,lawl do
+	            e.Parent = LP.Backpack
+	        end
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HVZM90_FAKESCRIPT))
+function SCRIPT_SVAA66_FAKESCRIPT() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Frame
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_SVAA66_FAKESCRIPT))
+function SCRIPT_UAWW79_FAKESCRIPT() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = TextButton_4
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Script.Start.Visible = true
+		game.Players.LocalPlayer.PlayerGui.Script.Credit.Visible = false
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_UAWW79_FAKESCRIPT))
+function SCRIPT_EOGE75_FAKESCRIPT() -- Credit.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Credit
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+		end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EOGE75_FAKESCRIPT))
