@@ -11,19 +11,19 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0, 0, 0)
-Frame.Size = UDim2.new(0, 1533, 0, 598)
+Frame.Size = UDim2.new(0, 1536, 0, 769)
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.36921069, 0, 0.137123749, 0)
+ImageLabel.Position = UDim2.new(0.417450577, 0, 0.116256975, 0)
 ImageLabel.Size = UDim2.new(0, 139, 0, 117)
 ImageLabel.Image = "rbxgameasset://Images/VIPZ"
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel.BackgroundTransparency = 1
-TextLabel.Position = UDim2.new(0.242009133, 0, 0.332775891, 0)
+TextLabel.Position = UDim2.new(0.288945258, 0, 0.350432396, 0)
 TextLabel.Size = UDim2.new(0, 532, 0, 76)
 TextLabel.Font = Enum.Font.ArialBold
 TextLabel.Text = "BLACKLISTED"
@@ -33,7 +33,7 @@ TextLabel.TextSize = 80
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel_2.BackgroundTransparency = 1
-TextLabel_2.Position = UDim2.new(0.274624914, 0, 0.489966542, 0)
+TextLabel_2.Position = UDim2.new(0.320257246, 0, 0.512438476, 0)
 TextLabel_2.Size = UDim2.new(0, 436, 0, 210)
 TextLabel_2.Font = Enum.Font.SciFi
 TextLabel_2.Text = "If you feel you the blacklist was a mistake then contact us via discord server: PYHYscy"
